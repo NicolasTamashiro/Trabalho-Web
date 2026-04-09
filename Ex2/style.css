@@ -1,0 +1,40 @@
+/* Estilo para a página */
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+/* Alterado a cor do texto */
+p {
+    color: white;
+
+}
+
+/* Alterado a cor do titulo */
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.perfil {
+    margin: 30px;
+}
+
+img {
+    width: 150px;
+    height: 150px;       
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+body {
+    background-image: url('rfggsa_8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
