@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background-image: url(rfggsa_8.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color:rgb(154, 181, 207);
+}
+
+h2, h3 {
+    color:rgb(154, 181, 207);
+}
+
+p {
+    color: white;
+    line-height: 1.6;
+}
+
+small {
+    color: white;
+}
+
+.blog {
+    list-style: none; 
+    max-width: 1300px;    
+    margin: 50px auto;   
+    text-align: left;
+}
+
+.blog li {
+    margin-bottom: 40px; 
+    padding: 20px;
+    background-color: rgba(49, 47, 47, 0.3); 
+    border-radius: 8px;
+}
