@@ -12,11 +12,18 @@ p {
 
 /* Alterado a cor do titulo */
 h1 {
-    color: white;
+    color: #aad4e2;
 }
 
 h2 {
-    color: white;
+    color: #aad4e2;
+}
+
+.container-perfis {
+    display: flex;
+    justify-content: center; /* centraliza */
+    gap: 40px; /* espaço entre eles */
+    margin-top: 30px;
 }
 
 .perfil {
