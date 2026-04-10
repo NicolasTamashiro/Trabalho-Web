@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    background-image: url(rfggsa_8.jpg);
+    background-size: cover;
+    color: rgb(176, 204, 241);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+details {
+    background-color: #222;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+details[open] {
+    background-color: #333;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
