@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("rfggsa_8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(168, 208, 245);
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
