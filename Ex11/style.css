@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: url("rfggsa_8.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+/* CONTEÚDO */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* CARD */
+.bloco {
+    width: 600px;
+    max-width: 90%;
+
+    background: rgba(255,255,255,0.95);
+    color: #222;
+
+    padding: 40px;
+
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* LISTA */
+.mapa {
+    list-style: none;
+
+    /* obrigatório */
+    text-indent: 10px;
+}
+
+/* ITENS */
+.mapa > li {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+/* SUBLISTA */
+.mapa ul {
+    margin-left: 30px;
+    margin-top: 8px;
+
+    text-indent: 15px;
+    font-weight: normal;
+}
+
+/* HOVER */
+.mapa li:hover {
+    color: #2a5298;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .bloco {
+        padding: 25px;
+    }
+}
