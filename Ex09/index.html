@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <div class="input-area">
+        <input type="text" id="novaTarefa" placeholder="Digite uma tarefa...">
+        <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+
+    <ul id="lista"></ul>
+</div>
+
+<script>
+    function adicionarTarefa() {
+        const input = document.getElementById("novaTarefa");
+        const texto = input.value;
+
+        if (texto === "") return;
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+                <input type="checkbox" onchange="concluirTarefa(this)">
+                <span>${texto}</span>
+                <button onclick="editarTarefa(this)">Editar</button>
+                <button onclick="removerTarefa(this)">Excluir</button>
+            `;
+
+        document.getElementById("lista").appendChild(li);
+        input.value = "";
+    }
+
+    function concluirTarefa(checkbox) {
+        const span = checkbox.nextElementSibling;
+
+        if (checkbox.checked) {
+            span.classList.add("concluida");
+        } else {
+            span.classList.remove("concluida");
+        }
+    }
+
+    function removerTarefa(botao) {
+        botao.parentElement.remove();
+    }
+
+    function editarTarefa(botao) {
+        const span = botao.parentElement.querySelector("span");
+        const novoTexto = prompt("Editar tarefa:", span.textContent);
+
+        if (novoTexto !== null && novoTexto !== "") {
+            span.textContent = novoTexto;
+        }
+    }
+</script>
+
+</body>
+</html>
