@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Paisagens 🌄</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌄 Galeria de Paisagens</h1>
+
+<div class="galeria">
+
+    <figure onclick="abrir('i1.png')"><img src="i1.png" alt="Paisagem 1"></figure>
+    <figure onclick="abrir('i2.png')"><img src="i2.png" alt="Paisagem 2"></figure>
+    <figure onclick="abrir('i3.png')"><img src="i3.png" alt="Paisagem 3"></figure>
+    <figure onclick="abrir('i4.png')"><img src="i4.png" alt="Paisagem 4"></figure>
+    <figure onclick="abrir('i5.png')"><img src="i5.png" alt="Paisagem 5"></figure>
+
+</div>
+
+<dialog id="modal" onclick="this.close()">
+    <img id="imgGrande">
+</dialog>
+
+<footer>
+    <p>
+        🌄 As paisagens naturais nos lembram da beleza do mundo em que vivemos. Estar em contato com a natureza traz paz, reduz o estresse e melhora o bem-estar. 🌿
+        Apreciar montanhas, rios, florestas e o céu nos ajuda a desacelerar e valorizar os pequenos detalhes da vida. ✨
+    </p>
+</footer>
+
+<script>
+    function abrir(src) {
+        document.getElementById("imgGrande").src = src;
+        document.getElementById("modal").showModal();
+    }
+</script>
+
+</body>
+</html>
