@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("rfggsa_8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(168, 208, 245);
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto h2 {
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 14px;
+}
+
+.preco {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(168, 208, 245);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* propriedade pedida */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: rgb(120, 180, 230);
+}
